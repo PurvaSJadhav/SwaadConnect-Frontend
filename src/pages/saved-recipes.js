@@ -11,7 +11,7 @@ export const SavedRecipes = () => {
     const fetchSavedRecipes = async () => {
       try {
         const response = await axios.get(
-          `https://rec-server-backend.onrender.com/recipes/savedRecipes/${userID}`
+          `https://swaadconnect-backend.onrender.com/recipes/savedRecipes/${userID}`
         );
         setSavedRecipes(response.data.savedRecipes);
       } catch (err) {
@@ -26,7 +26,7 @@ export const SavedRecipes = () => {
   const deleteSavedRecipe = async (recipeID) => {
     try {
       await axios.delete(
-        `https://rec-server-backend.onrender.com/recipes/savedRecipes/${userID}/${recipeID}`
+        `https://swaadconnect-backend.onrender.com/recipes/savedRecipes/${userID}/${recipeID}`
       );
       // Update state to remove the deleted recipe
       setSavedRecipes(savedRecipes.filter(recipe => recipe._id !== recipeID));
