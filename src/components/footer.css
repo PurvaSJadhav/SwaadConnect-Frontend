@@ -1,0 +1,55 @@
+.footer {
+    background-color: #C8A2C8;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+    padding-top: 5px;
+}
+
+.f-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.f-info-socials i {
+    font-size: 32px;  
+    margin: 0 15px;   
+    color: #333;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.f-info-socials i:hover {
+    color: #e74c3c;
+    transform: scale(1.2);
+}
+
+.f-info-brand {
+    font-size: 14px;
+}
+
+.creator-name {
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.creator-name:hover {
+    color: #e74c3c;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.f-info-links a:hover {
+    color: #e74c3c;
+}
